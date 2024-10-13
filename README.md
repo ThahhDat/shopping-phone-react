@@ -2,11 +2,12 @@
 SmartBuy is an innovative e-commerce platform designed for smartphone enthusiasts. Our goal is to provide the latest and greatest smartphones with competitive pricing and excellent customer service.
 ## Installation
 To get started, clone the repository and install the dependencies:
-```bash
+
 git clone https://github.com/ThahhDat/shopping-phone-react.git
 cd shopping-phone-react
 npm install
 npm start
+
 ## Features
 - User-friendly interface
 - Secure payment options
