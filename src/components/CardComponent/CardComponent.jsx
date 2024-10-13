@@ -1,6 +1,6 @@
 
 import React from "react";
-import { StyleNameProduct, WrapperCardStyle, WrapperDiscount, WrapperPrice, WrapperReportText } from "./style";
+import { StyleNameProduct, WrapperCardStyle, WrapperDiscount, WrapperPrice, WrapperReportText, WrapperStyleTextSell } from "./style";
 import { StarFilled } from "@ant-design/icons";
 function CardComponent() {
     return (
@@ -21,10 +21,10 @@ function CardComponent() {
             <WrapperReportText>
                 <span style={{ marginRight:'5px'}}>
                     <span>4.5</span>{" "}
-                    <StarFilled style={{ color: "yellow", fontSize: "12px" }} />
+                    <StarFilled style={{ color: 'rgb(253,216,54)', fontSize: "12px" }} />
                 </span>
 
-                <span> | Da Ban 1000+</span>
+                <WrapperStyleTextSell >| Da Ban 1000+</WrapperStyleTextSell>
             </WrapperReportText>
             <WrapperPrice>
                 1.000.000VND

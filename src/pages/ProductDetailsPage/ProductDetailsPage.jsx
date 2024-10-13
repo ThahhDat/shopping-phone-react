@@ -3,9 +3,9 @@ import ProductDetailsComponent from "../../components/ProductDetailsComponent/Pr
 
 function ProductDetailsPage() {
     return (
-        <div style={{padding:'0 120px', background:'#efefef'}}>
-            <h5>Trang CHu</h5>
-            <ProductDetailsComponent />
+        <div style={{padding:'0px 120px', background:'#efefef' ,height:'1000px' }}>
+            <h5>Trang CHu</h5>    
+              <ProductDetailsComponent />  
         </div>
     );
 }
