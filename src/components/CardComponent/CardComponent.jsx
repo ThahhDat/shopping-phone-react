@@ -27,7 +27,7 @@ function CardComponent() {
                 <WrapperStyleTextSell >| Da Ban 1000+</WrapperStyleTextSell>
             </WrapperReportText>
             <WrapperPrice>
-                1.000.000VND
+               <span style={{marginRight:'8px'}}>1.000.00d</span>
                 <WrapperDiscount>-5%</WrapperDiscount>
             </WrapperPrice>
         </WrapperCardStyle>

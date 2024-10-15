@@ -1,5 +1,5 @@
 import React from "react";
-import { WrapperContainerLeft, WrapperContainerRight, WrapperTextLight, WrapperSignInPage } from "./style";
+import { WrapperContainerLeft, WrapperContainerRight, WrapperTextLight, WrapperSignInPage, WrapperSignInPageSmall } from "./style";
 import InputForm from "../../components/InputForm/InputForm";
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 import { Image } from "antd";
@@ -16,7 +16,7 @@ function SignInPage() {
   
     return (
         <WrapperSignInPage>
-            <div style={{ width: '800px', height: '500px', borderRadius: '10px', background: '#fff', display: 'flex', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)' }}>
+            <WrapperSignInPageSmall >
                 <WrapperContainerLeft>
                     <h1 style={{ marginBottom: '20px', color: '#0d5cb6' }}>Xin chào!</h1>
                     <p style={{ color: '#555', marginBottom: '24px' }}>Đăng nhập vào tài khoản của bạn</p>
@@ -68,7 +68,7 @@ function SignInPage() {
                     <Image src={imagelogo} preview={false} alt="image-logo" style={{ height: '180px', width: '180px', borderRadius: '8px' }} />
                     <h4 style={{ color: '#0d5cb6' }}>Mua sắm tại Tiki</h4>
                 </WrapperContainerRight>
-            </div>
+            </WrapperSignInPageSmall>
         </WrapperSignInPage>
     );
 }

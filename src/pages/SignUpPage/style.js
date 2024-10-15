@@ -4,7 +4,6 @@ export const WrapperSignInPage = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.53);
     height: 100vh;
 `;
 
