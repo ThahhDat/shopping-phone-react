@@ -14,6 +14,8 @@ import {
     WrapperStyleImage,
     WrapperStyleImageSmall,
     WrapperStyleNameProduct,
+    WrapperStyleProduct,
+    WrapperStyleProductSL,
     WrapperStyleRowImageSmall,
     WrapperStyleTextSell,
 } from "./style";
@@ -23,7 +25,13 @@ const ProductDetailsComponent = () => {
     const onChange = (value) => {};
     return (
         <Row style={{ padding: "16px", background: "#fff" }}>
-            <Col span={10} style={{borderRight:'1px solid #e5e5e5', paddingRight:'20px'}}>
+            <Col
+                span={10}
+                style={{
+                    borderRight: "1px solid #e5e5e5",
+                    paddingRight: "20px",
+                }}
+            >
                 <WrapperStyleImage
                     src={imageProduct}
                     alt="image product"
@@ -60,8 +68,8 @@ const ProductDetailsComponent = () => {
                     */}
                 </WrapperStyleRowImageSmall>
             </Col>
-            <Col span={14} style={{paddingLeft:'20px'}} >
-                <div style={{ padding: "16px",border:'1px solid #e5e5e5', borderRadius:'4px'}}>
+            <Col span={14} style={{ paddingLeft: "20px" }}>
+                <WrapperStyleProduct>
                     <WrapperStyleNameProduct>
                         Apple iPhone 16 Pro Max{" "}
                     </WrapperStyleNameProduct>
@@ -101,8 +109,8 @@ const ProductDetailsComponent = () => {
                         </span>
                         <span className="change-address">Đổi</span>
                     </WrapperAddressProduct>
-                    <div style={{margin:'10px 0px 20px' , borderTop:'1px solid #e5e5e5' , borderBottom:'1px solid #e5e5e5' , padding:'10px 0'}}>
-                        <div style={{borderBottom:'10px'}}>Số Lượng :</div>
+                    <WrapperStyleProductSL>
+                        <div style={{ borderBottom: "10px" }}>Số Lượng :</div>
                         <WrapperQualityProduct>
                             <WrapperBtnQualityProduct>
                                 <MinusOutlined
@@ -125,36 +133,43 @@ const ProductDetailsComponent = () => {
                                 />
                             </WrapperBtnQualityProduct>
                         </WrapperQualityProduct>
-                    </div>
-                    <WrapperStyleButtonSell >
-                        <ButtonComponent 
-                        bordered ={false}
+                    </WrapperStyleProductSL>
+                    <WrapperStyleButtonSell>
+                        <ButtonComponent
+                            bordered={false}
                             size={40}
-                            styleButton={{background: 'rgb(255, 66, 78)',
-                            height: '48px',
-                            width:'220px',
-                            border: 'none' ,
-                            borderRadius: '4px',
-                        }}
-                        textButton={'Mua ngay'}
-                        styleTextButton={{color:'#fff' , fontSize:'15px', fontWeight:700}}
-                        >
-                        </ButtonComponent>
-                        <ButtonComponent 
-                          bordered ={false}
+                            styleButton={{
+                                background: "rgb(255, 66, 78)",
+                                height: "48px",
+                                width: "220px",
+                                border: "none",
+                                borderRadius: "4px",
+                            }}
+                            textButton={"Mua ngay"}
+                            styleTextButton={{
+                                color: "#fff",
+                                fontSize: "15px",
+                                fontWeight: 700,
+                            }}
+                        ></ButtonComponent>
+                        <ButtonComponent
+                            bordered={false}
                             size={40}
-                            styleButton={{background: '#fff',
-                            height: '48px',
-                            width:'220px',
-                            border: '1px solid rgb(13,92,182)' ,
-                            borderRadius: '4px',
-                        }}
-                        textButton={'Mua tra sau'}
-                        styleTextButton={{color:'rgb(13,92,182',fontSize:'15px'}}
-                        >
-                        </ButtonComponent>
+                            styleButton={{
+                                background: "#fff",
+                                height: "48px",
+                                width: "220px",
+                                border: "1px solid rgb(13,92,182)",
+                                borderRadius: "4px",
+                            }}
+                            textButton={"Mua tra sau"}
+                            styleTextButton={{
+                                color: "rgb(13,92,182",
+                                fontSize: "15px",
+                            }}
+                        ></ButtonComponent>
                     </WrapperStyleButtonSell>
-                </div>
+                </WrapperStyleProduct>
             </Col>
         </Row>
     );

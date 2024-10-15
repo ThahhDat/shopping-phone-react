@@ -3,6 +3,7 @@ import { WrapperContainerLeft, WrapperContainerRight, WrapperTextLight, WrapperS
 import InputForm from "../../components/InputForm/InputForm";
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 import { Image } from "antd";
+import imageBackground from "../../assets/images/background.jpg";
 import imagelogo from "../../assets/images/logo-sign-in.png";
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
@@ -12,8 +13,9 @@ function SignUpPage() {
       setShowPassword(!showPassword);
     }
     return (
-        <WrapperSignInPage>
-            <div style={{ width: '800px', height: '500px', borderRadius: '10px', background: '#fff', display: 'flex', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)' }}>
+      
+      <WrapperSignInPage style={{backgroundImage: `url(${imageBackground})`}}>
+            <div style={{ width: '800px', height: '500px', borderRadius: '10px', background:'rgba(255,255,255,0.5)', display: 'flex', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)' }}>
                 <WrapperContainerLeft>
                     <h1 style={{ marginBottom: '20px', color: '#0d5cb6' }}>Xin chào!</h1>
                     <p style={{ color: '#555', marginBottom: '24px' }}>Đăng nhập vào tài khoản của bạn</p>

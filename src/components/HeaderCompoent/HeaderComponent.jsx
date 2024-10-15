@@ -17,21 +17,22 @@ const HeaderComponent = () => {
     };
 
     return (
-        <div>
-            <WrapperHeader gutter={16}>
-                <Col span={6}>
-                    <WrapperTextHeader onClick={handleLogoClick}>
+        <div style={{width:'100%',background:'rgb(255,255,255)',display:'flex', justifyContent:'center'}}>
+            <WrapperHeader >
+                <Col span={5}>
+                    <WrapperTextHeader  onClick={handleLogoClick}>
                         LaBuS
                     </WrapperTextHeader>
                 </Col>
-                <Col span={12}>
+                <Col span={13}>
                     <ButtonInputSearch
                         size="large"
+                        bordered={false}
                         placeholder="input search text"
                         textButton="Tìm kiếm"
                     />
                 </Col>
-                <Col span={6} style={{ display: "flex", gap: '20px' }}>
+                <Col span={6} style={{ display: "flex", gap: '54px' ,alignItems:'center' }}>
                     <WrapperHeaderAccount>
                         <UserIconWrapper>
                             <UserOutlined />

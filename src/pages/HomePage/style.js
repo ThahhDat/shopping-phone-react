@@ -6,7 +6,6 @@ export const WrapperTypeProduct = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 24px;
-    border-bottom: 1px solid red;
     height: 44px;
 `;
 
@@ -18,12 +17,13 @@ export const WrapperButtonComponent = styled(ButtonComponent)`
             color: #fff;
         }
     }
+    width: 100%;
+    text-align: center;
 `
 
 export const WrapperProducts= styled.div` 
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
-    justify-content: space-between;
+    gap: 14px;
+    margin-top: 20px;
 `

@@ -4,11 +4,14 @@ import { Row } from "antd";
 // Phần bọc toàn bộ header
 export const WrapperHeader = styled(Row)`
     padding: 10px 120px;
+    margin: 0 auto;
     background-color: rgb(255, 255, 255);
     align-items: center;
     gap: 16px;
     flex-wrap: nowrap;
+    width: 1270px;
 `;
+
 
 // Logo của header
 export const WrapperTextHeader = styled.span`

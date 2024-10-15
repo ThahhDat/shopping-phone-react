@@ -8,6 +8,16 @@ export const WrapperSignInPage = styled.div`
     height: 100vh;
 `;
 
+export const WrapperSignInPageSmall = styled.div`
+    width: 800px;
+    height: 500px
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0);
+`;
+
+
 export const WrapperContainerLeft = styled.div`
     flex: 1;
     display: flex;
