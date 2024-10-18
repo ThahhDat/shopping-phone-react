@@ -32,7 +32,7 @@ const HeaderComponent = () => {
                         textButton="Tìm kiếm"
                     />
                 </Col>
-                <Col span={6} style={{ display: "flex", gap: '54px' ,alignItems:'center' }}>
+                <Col span={6} style={{ display: "flex", gap: 'px' ,alignItems:'center' }}>
                     <WrapperHeaderAccount>
                         <UserIconWrapper>
                             <UserOutlined />

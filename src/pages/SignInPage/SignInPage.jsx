@@ -3,7 +3,7 @@ import { WrapperContainerLeft, WrapperContainerRight, WrapperTextLight, WrapperS
 import InputForm from "../../components/InputForm/InputForm";
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 import { Image } from "antd";
-import imagelogo from "../../assets/images/logo-sign-in.png";
+import imagelogo from "../../assets/images/logo-sign-in.jpg";
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
 function SignInPage() {

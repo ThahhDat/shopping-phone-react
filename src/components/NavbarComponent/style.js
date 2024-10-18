@@ -20,8 +20,8 @@ export const WrapperContent = styled.div`
 
 export const WrapperTextPrice = styled.div`
     padding: 4px;
-    color: rgb(56,56,61);
-    border-radius:10px;
-    backgroundColor:rgb(238,238,238);
+    color: rgb(56, 56, 61);
+    border-radius: 10px;
+    backgroundcolor: rgb(238, 238, 238);
     width: fit-content;
 `;
