@@ -33,6 +33,7 @@ function SignUpPage() {
                 }}
             >
                 <WrapperContainerLeft>
+                    {/* eslint-disable-next-line jsx-a11y/heading-has-content */}
                     <h1 style={{ marginBottom: "20px", color: "#0d92ff" }}>
                         Xin chào!
                     </h1>

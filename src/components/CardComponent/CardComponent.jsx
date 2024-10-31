@@ -8,13 +8,14 @@ import {
     WrapperStyleTextSell,
 } from "./style";
 import { StarFilled } from "@ant-design/icons";
+
 function CardComponent() {
     return (
         <WrapperCardStyle
             hoverable
             // headStyle={{width:'200px',height:'200px'}}
-            style={{ width: 200 }}
-            BodyStyle={{ padding: "10px" }}
+            style={{ width: 200 ,padding: "10px" }}
+            // bodyStyle={{ padding: "10px" }}
             cover={
                 <img
                     alt="example"
@@ -35,7 +36,7 @@ function CardComponent() {
                 <WrapperStyleTextSell>| Da Ban 1000+</WrapperStyleTextSell>
             </WrapperReportText>
             <WrapperPrice>
-                <span style={{ marginRight: "8px" }}>1.000.00d</span>
+                <span style={{ marginRight: "8px" }}>1.000.000d</span>
                 <WrapperDiscount>-5%</WrapperDiscount>
             </WrapperPrice>
         </WrapperCardStyle>
